@@ -34,11 +34,11 @@ Want to test if this works immediately? You don't need an account or a GitHub re
 
 * **🛡️ No Sign-In Required:** We don't ask for your GitHub account or email.
 * **🔒 Zero-Retention:** Upload your Zip, get your APK, and we delete your files instantly.
-* **💸 Free Forever:** Unlimited Debug builds for testing and prototyping.
+* **🤝 Transparent & Unlimited:** Builds are executed on our [Public Engine Runner](https://github.com/swaplab-engine/public-build-swaplab-engine/actions). It is fully audit-able and **does NOT consume** your personal GitHub Action minutes.
 
 **How to test these templates in 30 seconds:**
 1.  Click the green **<> Code** button above -> **Download ZIP**.
-2.  Extract the file and open the folder of the template you want (e.g., `/c3-ghost-racer-android`).
+2.  Extract the file and open the folder of the template you want (e.g., `/framework7-svelte`).
 3.  **Zip that specific folder** and upload it to [public.swaplab.net](https://public.swaplab.net).
 
 ---
