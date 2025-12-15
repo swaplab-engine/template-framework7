@@ -1,0 +1,57 @@
+{
+  "name": "hackernews7-svelte",
+  "private": true,
+  "version": "7.0.1",
+  "description": "hackernews7-svelte",
+  "repository": {
+    "type": "git",
+    "url": "https://guillaumebiton.github.com/hackernews7-svelte.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "vite build && npx workbox generateSW workbox-config.js",
+    "postinstall": "npx cpy --flat ./node_modules/framework7-icons/fonts/*.* ./src/fonts/ && npx cpy --flat ./node_modules/material-icons/iconfont/*.* ./src/fonts/"
+  },
+  "browserslist": [
+    "IOS >= 13",
+    "Safari >= 13",
+    "last 5 Chrome versions",
+    "last 5 Firefox versions",
+    "Samsung >= 12"
+  ],
+  "dependencies": {
+    "dom7": "^4.0.4",
+    "framework7": "^7.0.1",
+    "framework7-icons": "^5.0.5",
+    "framework7-svelte": "^7.0.1",
+    "material-icons": "^1.10.8",
+    "skeleton-elements": "^4.0.0",
+    "svelte": "^3.59.1",
+    "swiper": "^8.1.1"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "1.0.0-next.41",
+    "cpy-cli": "^4.1.0",
+    "cross-env": "^7.0.3",
+    "less": "^4.1.2",
+    "postcss-preset-env": "^7.4.3",
+    "vite": "^2.9.18",
+    "workbox-cli": "^6.5.3"
+  },
+  "overrides": {
+    "rollup": "^2.79.2",
+    "got": "^11.8.6",
+    "ejs": "^3.1.10",
+    "semver": "^7.5.4",
+    "braces": "^3.0.3",
+    "micromatch": "^4.0.8",
+    "ws": "^8.17.1",
+    "json5": "^2.2.3",
+    "@babel/traverse": "^7.23.2",
+    "ip": "^2.0.1",
+    "follow-redirects": "^1.15.6",
+    "axios": "^1.6.0",
+    "terser": "^5.14.2",
+    "tmpl": "1.0.5"
+  }
+}
