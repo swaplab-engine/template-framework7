@@ -10,6 +10,18 @@ This repository hosts a collection of **Framework7 (Svelte)** starter templates 
 These templates are **Production Ready**. They come pre-configured with the necessary structure to be built instantly using **SwapLab Build Services**, supporting both **Android (APK/AAB)** and **iOS (Xcode Export)** workflows.
 
 
+---
+
+## 🎯 Supported Project Types
+
+This engine is designed to be intelligent. It automatically detects your project structure and applies the correct build strategy.
+
+| Project Source | Support Level | How it works |
+| :--- | :--- | :--- |
+| **Framework7 (CLI)** | ⭐️ **Native** | Detects `framework7.json` or F7 directory structure. builds UI assets, then compiles Native. |
+| **Standard Cordova** | ✅ **Full Support** | Detects `config.xml` at the root. Builds exactly like the classic Cordova CLI. |
+| **Construct 3 (Games)** | ✅ **Full Support** | Seamlessly builds C3 mobile exports. Just export your game as "Cordova" and upload. |
+| **Pure Web Apps** | ⚡ **Auto-Wrap** | If you upload a plain HTML/JS/CSS project (Svelte/Vue/React) without Cordova config, the engine will **auto-initialize** a native wrapper for you. |
 
 
 ---
