@@ -2,6 +2,7 @@
   "name": "hackernews7-svelte",
   "private": true,
   "version": "7.0.1",
+  "type": "module",
   "description": "hackernews7-svelte",
   "repository": {
     "type": "git",
@@ -9,7 +10,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "vite build && npx workbox generateSW workbox-config.js",
+    "build": "vite build && npx workbox generateSW workbox-config.cjs",
     "postinstall": "npx cpy --flat ./node_modules/framework7-icons/fonts/*.* ./src/fonts/ && npx cpy --flat ./node_modules/material-icons/iconfont/*.* ./src/fonts/"
   },
   "browserslist": [
@@ -21,22 +22,22 @@
   ],
   "dependencies": {
     "dom7": "^4.0.4",
-    "framework7": "^7.0.1",
+    "framework7": "^9.1.3",
     "framework7-icons": "^5.0.5",
     "framework7-svelte": "^7.0.1",
     "material-icons": "^1.10.8",
     "skeleton-elements": "^4.0.0",
-    "svelte": "^3.59.1",
-    "swiper": "^8.1.1"
+    "svelte": "^5.57.1",
+    "swiper": "^8.4.7"
   },
   "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "1.0.0-next.41",
+    "@sveltejs/vite-plugin-svelte": "^7.3.1",
     "cpy-cli": "^4.1.0",
     "cross-env": "^7.0.3",
     "less": "^4.1.2",
     "postcss-preset-env": "^7.4.3",
-    "vite": "^2.9.18",
-    "workbox-cli": "^6.5.3"
+    "vite": "^8.3.0",
+    "workbox-cli": "^7.4.1"
   },
   "overrides": {
     "rollup": "^2.79.2",
@@ -52,6 +53,7 @@
     "follow-redirects": "^1.15.6",
     "axios": "^1.6.0",
     "terser": "^5.14.2",
-    "tmpl": "1.0.5"
+    "tmpl": "1.0.5",
+    "tmp": "^0.2.3"
   }
 }
